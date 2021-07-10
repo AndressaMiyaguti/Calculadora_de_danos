@@ -1,0 +1,108 @@
+body{
+    background-attachment: fixed;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    margin-top: 30px;
+    color:#dba015;
+    font-size: 32px;    }
+
+.ajuste{margin-top: 2px;}
+    
+.escolhaP{
+    float: left;
+    color:#dba015;
+    font-size: 28px;
+    margin-top: 3%;
+    margin-left: 190px;
+    
+}
+.escolhaB{
+    
+    float: right;
+    color:#dba015;
+    font-size: 28px;
+    margin-top: 3%;
+    margin-right: 200px;
+      
+     
+}
+.elementos-container{    
+    float: left;   
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    padding-right: 5%;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-left: 55px;
+}
+.cor{
+    font-size: 25px;
+    color: rgb(101, 74, 197);
+}
+.personagem{
+    padding: 20px;   
+
+}
+.ajustePersonagem:hover{   
+    box-shadow:
+    1px 1px #53a7ea,
+    2px 2px #53a7ea,
+    3px 3px #53a7ea;
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-10px); 
+    box-shadow: 0 0 200px rgb(46, 1, 1) inset;
+    border: 2px solid black;
+    border-radius: 10px;
+    zoom: 150%;
+    min-height: calc/100vh-40px;
+    max-width:calc/100vh-300px;
+    
+}    
+
+.arma_bijuu{
+    float: right;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 200px 200px 200px;
+    -ms-layout-grid-line: inherit;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-right : 20px;
+    margin-right: 3px;
+    
+    
+}
+.cor_b{
+    font-size: 25px;
+    color: rgb(190, 161, 30);
+    
+}
+
+
+.botao{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 150px;
+    margin-left: 850px;
+    margin-top: 23%;    
+    border-radius: 40%;
+    border: rgb(5, 5, 5) 5px solid;
+    background-color: rgba(43, 36, 36, 0.911) ;    
+}
+#btnCalcular{
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: rgba(43, 36, 36, 0.911) ;
+    border: rgba(43, 36, 36, 0.911) 5px solid;
+
+}
+#dano{
+    color: aliceblue;
+    font-size: 25px;
+}

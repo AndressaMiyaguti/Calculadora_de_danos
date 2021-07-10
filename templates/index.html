@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de danos</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <script type="text/javascript" src="/static/index.js"></script>   
+    <!--<link rel="shortcut icon" href="../img/favicon(4).ico" type="image/x-icon"> ICONE ANIMADO PORÉM NÃO RODA NO CHROME-->
+    
+    <link rel="shortcut icon" href="../img/favicon (2).ico" type="image/x-icon" /> <!--ICONE DA PAGINA-->
+</head>
+    <body onload="iniciar()" background="\static\img\fungo_g.jpg" > <!--IMAGEM DE FUNDO--><!-- Aciona o evento nos elementos dentro dessa função -->
+        <div class="titulo">
+            <h1 class="ajuste" > Calculadora de Dano </h1>
+        </div>
+        <div class="escolhaP">
+            <h2>Selecione um Personagem</h2>
+        </div>
+        <div class="escolhaB">
+            <h2>Escolha sua Bijuu</h2>
+        </div>
+    <!-- --------------------------------------------------------------------------------------- --> 
+    
+        <div class="personagem" > <!-- class="elementos-container" -->
+            <div class="elementos-container" > <!-- class="elemento personagem" -->
+                {% for p in persImg %}
+
+                <div class =" elemento personagem" id="{{p.personagem}}" data-personagem = "{{p.personagem}}">
+                                
+                <img class="ajustePersonagem" src="{{p.imagem}}" >
+                    <h6 class="cor"> {{p.personagem}} </h6>
+                </div>    
+                
+                {% endfor %} 
+            </div>   
+
+            <div class="arma_bijuu" >
+                {% for b in bijuuImg %}    
+
+                <div class="elemento arma" id="{{b.bijuu}}" data-bijuu = "{{b.bijuu}}" >
+
+                    <img class="ajustePersonagem" src="{{b.imagem}}"> 
+                        <h6 class="cor_b"> {{b.bijuu}} </h6>
+
+                </div>
+                {% endfor %}
+                
+                
+            </div>
+                <div class="botao"> <!-- DIV BOTÃO -->
+                    <button id="btnCalcular" type="button" > <img src="{{botaoImg}}" alt="Calcular" width="80%" > </button> 
+                </div>
+                <div class="texto-container">
+                    <span id="dano"></span>
+                </div>    
+                
+            </div>
+        </div>
+    </body>
+</html>
